@@ -1,0 +1,30 @@
+.topnav {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.topnav a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+a.topnav {
+  color: white;
+}
+
+body {
+  background-color: rgb(247, 249, 252);
+  color: black;
+  background-image: url(/img/Massage\ 2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: black;
+  padding: 0.8rem 0 1.5rem 3rem;
+  margin: 0;
+}
