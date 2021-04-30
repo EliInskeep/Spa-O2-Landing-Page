@@ -1,30 +1,65 @@
+/* Nav Bar */
 .topnav {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  padding-top: 0;
+  background-color: rgb(24, 24, 26);
+}
+
+.nav-item {
+  display: inline;
+}
+
+li a {
+  color: white;
   text-decoration: none;
-  grid-template-columns: repeat(6, 1fr);
+  padding: 14px 20px;
+  font-size: 18px;
+}
+
+.nav-logo {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 35px;
 }
 
 .topnav a:hover {
-  color: white;
+  color: rgb(170, 173, 179);
   cursor: pointer;
-}
-
-a.topnav {
-  color: white;
-}
-
-body {
-  background-color: rgb(247, 249, 252);
-  color: black;
-  background-image: url(/img/Massage\ 2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 h1 {
   color: black;
   padding: 0.8rem 0 1.5rem 3rem;
   margin: 0;
+}
+
+/* Body */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(247, 249, 252);
+  color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url(/img/Massage\ 2.jpg);
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  text-align: center;
 }
