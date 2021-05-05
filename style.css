@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Lato", sans-serif;
   background-color: rgb(255, 255, 252);
-  margin: 0;
-  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 /* Nav Bar */
@@ -20,7 +25,7 @@ body {
 
 .nav-logo {
   font-size: 1.5rem;
-  margin: .5rem;
+  margin: 0.5rem;
   margin-left: 1rem;
   font-family: "Lobster", cursive;
   font-size: 35px;
@@ -53,7 +58,7 @@ body {
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -94,7 +99,7 @@ body {
   }
 
   .navbar-links li a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .navbar-links.active {
@@ -102,34 +107,45 @@ body {
   }
 }
 
-/* Header Image */
-.header {
+/* Hero Image */
+.hero {
+  height: 75%;
   background-image: url(/img/Massage\ 2.jpg);
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-  position: relative;
-  overflow: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-position: 0 -160px;
-  margin: 0;
-  margin-top: 54px;
+  background-size: cover;
+  background-attachment: fixed;
   -moz-box-shadow: inset 0 -10px 70px 10px #000000;
   -webkit-box-shadow: inset 0 -10px 70px 10px #000000;
   box-shadow: inset 0 -10px 70px 10px #000000;
 }
 
-.header-quote {
+.hero span {
   font-family: "Philosopher", sans-serif;
-  margin-top: 5rem;
   font-size: 40px;
-  color: white;
   text-align: center;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .hero {
+    max-height: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .hero span {
+    font-size: 25px;
+    top: 42%;
+  }
 }
 
 /* Packages & Services */
-.services-preview {
+/* .services-preview {
   display: flex;
   width: 100%;
   height: 500px;
@@ -164,4 +180,4 @@ h3 {
   align-items: center;
   justify-content: center;
   font
-}
+} */
