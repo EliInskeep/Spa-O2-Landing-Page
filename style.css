@@ -112,8 +112,8 @@ html {
 /* Hero Image */
 .hero {
   background-image: linear-gradient(
-      rgba(46, 46, 46, 0.5),
-      rgba(46, 46, 46, -0.5)
+      rgba(100, 100, 100, 0.5),
+      rgba(64, 64, 64, -0.5)
     ),
     url(/img/Massage\ 2.jpg);
   height: 80%;
@@ -149,6 +149,8 @@ html {
     width: 100%;
     background-size: contain;
     background-position: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .hero span {
@@ -164,11 +166,13 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 1rem;
 }
 
 .services .content .services-box {
   width: 500px;
   margin: 25px;
+  height: 500px;
 }
 
 .services .content .services-box .services-image {
@@ -184,7 +188,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .services .content .services-box h3 {
@@ -205,8 +209,201 @@ html {
   margin-top: 2rem;
 }
 
-.services .content .services-box .btn button {
+.services .content .services-box .btn a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  background: #262c37;
+  letter-spacing: 2px;
   font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 25px;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+.services .content .services-box .btn a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.services .content .services-box .btn a span {
+  display: block;
+  position: absolute;
+  background: #2894ff;
+}
+
+.services .content .services-box .btn a span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.services .content .services-box .btn a:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.services .content .services-box .btn a span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.services .content .services-box .btn a:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.services .content .services-box .btn a span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.services .content .services-box .btn a:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.services .content .services-box .btn a span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.services .content .services-box .btn a:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+@media (max-width: 1665px) {
+  .services .content {
+    width: 100%;
+  }
+
+  .services .content .services-box {
+    width: 450px;
+    margin: 25px;
+    height: 500px;
+  }
+
+  .services .content .services-box .services-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  .services .content .services-box .services-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .services .content .services-box p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1515px) {
+  .services .content .services-box {
+    width: 400px;
+    margin: 25px;
+    height: 500px;
+  }
+
+  .services .content .services-box .services-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  .services .content .services-box .services-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .services .content .services-box p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services .content {
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services .content .services-box {
+    width: 350px;
+    margin: 25px;
+    height: 450px;
+  }
+
+  .services .content .services-box h3 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .services .content .services-box .services-image {
+    position: relative;
+    width: 400px;
+    height: 300px;
+  }
+
+  .services .content .services-box .services-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .services .content .services-box p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+  }
 }
