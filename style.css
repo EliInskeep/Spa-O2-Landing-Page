@@ -154,7 +154,7 @@ html {
   }
 
   .hero span {
-    font-size: 15px;
+    font-size: 20px;
     top: 35%;
     width: 80%;
   }
@@ -302,10 +302,6 @@ html {
 }
 
 @media (max-width: 1665px) {
-  .services .content {
-    width: 100%;
-  }
-
   .services .content .services-box {
     width: 450px;
     margin: 25px;
@@ -365,45 +361,129 @@ html {
   }
 }
 
-@media (max-width: 500px) {
-  .services .content {
-    margin-top: -50px;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media (max-width: 1365px) {
   .services .content .services-box {
-    width: 350px;
-    margin: 25px;
-    height: 450px;
+    width: 380px;
+  }
+}
+
+@media (max-width: 1306px) {
+  .services .content .services-box {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .services .content .services-box {
+    width: 600px;
   }
 
-  .services .content .services-box h3 {
-    text-align: center;
-    padding-bottom: 1.5rem;
-    font-weight: bolder;
-    font-size: 20px;
-  }
-
-  .services .content .services-box .services-image {
-    position: relative;
-    width: 400px;
-    height: 300px;
-  }
-
-  .services .content .services-box .services-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  .services .content .services-box:nth-child(3) {
+    margin-top: 5px;
   }
 
   .services .content .services-box p {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 16px;
+    margin-top: 0.5rem;
   }
+}
+
+@media (max-width: 500px) {
+  .services .content {
+    margin-top: -35px;
+  }
+
+  .services .content .services-box h3 {
+    font-size: 25px;
+  }
+
+  .services .content .services-box {
+    width: 500px;
+    height: 460px;
+  }
+
+  .services .content .services-box .services-image {
+    width: 350px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services .content .services-box:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .services .content .services-box:nth-child(3) {
+    margin-top: ;
+  }
+}
+
+/* Reservations */
+.reservations .reservations-directions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 100px;
+  height: 600px;
+  background: rgb(255, 228, 48);
+  background: rgb(7, 167, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(181, 218, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 92%
+  );
+}
+
+.reservations .reservations-directions .reservations-text {
+  position: relative;
+  width: 700px;
+  margin: 25px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.reservations .reservations-directions .reservations-text h3 {
+  font-size: 75px;
+  font-weight: bolder;
+}
+
+.reservations .reservations-directions .reservations-text h4 {
+  padding-top: 35px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.reservations .reservations-directions .reservations-text .reservations-info {
+  font-size: 25px;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.reservations .reservations-directions .reservations-text .directions-notice {
+  font-size: 18px;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.reservations .reservations-directions .reservations-text p span {
+  font-weight: bolder;
+}
+
+.reservations .reservations-directions .directions {
+  position: relative;
+  width: 700px;
+  margin: 25px;
+  height: 575px;
+  margin-left: 50px;
+}
+
+iframe {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: flex-end;
+  margin-top: 92px;
 }
