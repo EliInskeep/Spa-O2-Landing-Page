@@ -9,9 +9,11 @@ body {
   background-color: rgb(255, 255, 252);
 }
 
-body,
-html {
+html,
+body {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Nav Bar */
@@ -166,7 +168,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .services .content .services-box {
@@ -412,10 +414,6 @@ html {
   .services .content .services-box:nth-child(1) {
     margin-bottom: 0;
   }
-
-  .services .content .services-box:nth-child(3) {
-    margin-top: ;
-  }
 }
 
 /* Reservations */
@@ -424,7 +422,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 150px;
   height: 600px;
   background: rgb(255, 228, 48);
   background: rgb(7, 167, 213);
@@ -455,15 +453,15 @@ html {
 }
 
 .reservations .reservations-directions .reservations-text .reservations-info {
-  font-size: 25px;
-  margin-top: 50px;
+  font-size: 20px;
+  margin-top: 45px;
   letter-spacing: 2px;
   line-height: 40px;
 }
 
 .reservations .reservations-directions .reservations-text .directions-notice {
-  font-size: 18px;
-  padding-top: 15px;
+  font-size: 15px;
+  padding-top: 30px;
   letter-spacing: 2px;
   line-height: 40px;
 }
@@ -517,5 +515,234 @@ iframe {
   iframe {
     height: 450px;
     margin-top: 75px;
+  }
+}
+
+@media (max-width: 1564px) {
+  .reservations .reservations-directions .reservations-text {
+    width: 600px;
+  }
+
+  .reservations .reservations-directions .directions {
+    width: 600px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1339px) {
+  .reservations .reservations-directions .reservations-text {
+    width: 500px;
+  }
+
+  .reservations .reservations-directions .directions {
+    width: 500px;
+  }
+
+  iframe {
+    height: 400px;
+    margin-top: 100px;
+  }
+
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    font-size: 15px;
+  }
+
+  .reservations .reservations-directions .reservations-text .directions-notice {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .reservations .reservations-directions .reservations-text {
+    width: 80%;
+  }
+
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .reservations .reservations-directions {
+    height: 500px;
+  }
+
+  .reservations .reservations-directions .directions {
+    width: 80%;
+  }
+
+  .reservations .reservations-directions .reservations-text h4 {
+    font-size: 22px;
+  }
+
+  iframe {
+    height: 450px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .reservations .reservations-directions .reservations-text .directions-notice {
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+
+  .reservations .reservations-directions .directions {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 763px) {
+  .reservations .reservations-directions .reservations-text h3 {
+    text-align: center;
+  }
+
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .reservations .reservations-directions .reservations-text h4 {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .reservations .reservations-directions .reservations-text .directions-notice {
+    font-size: 15px;
+    padding-top: 8px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+
+  .reservations .reservations-directions .reservations-text h4 {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .reservations .reservations-directions .directions {
+    width: 100%;
+    margin: 0;
+  }
+
+  iframe {
+    height: 350px;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .reservations .reservations-directions {
+    margin-top: 100px;
+  }
+
+  .reservations .reservations-directions .reservations-text h3 {
+    font-size: 57px;
+  }
+
+  .reservations .reservations-directions .reservations-text .reservations-info {
+    font-size: 16px;
+  }
+
+  .reservations .reservations-directions .reservations-text h4 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .reservations .reservations-directions .reservations-text .directions-notice {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  display: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content .links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.footer-content .links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-content .links li {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-content .links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-content .footer-bottom p {
+  word-spacing: 2px;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.footer-content .footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+.footer-content .links li a:hover {
+  color: rgb(170, 173, 179);
+  cursor: pointer;
+}
+
+@media (max-width: 1139px) {
+  footer {
+    margin-top: 550px;
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    margin-top: 550px;
   }
 }
