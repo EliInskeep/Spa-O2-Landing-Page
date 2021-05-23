@@ -136,6 +136,9 @@ body {
   width: 40%;
   top: 38%;
   left: 50%;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 1620px) {
@@ -169,6 +172,9 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 5rem;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .services .content .services-box {
@@ -428,7 +434,7 @@ body {
   background: rgb(7, 167, 213);
   background: linear-gradient(
     0deg,
-    rgba(181, 218, 255, 1) 0%,
+    rgba(180, 218, 255, 1) 0%,
     rgba(255, 255, 255, 1) 92%
   );
 }
@@ -744,5 +750,15 @@ footer {
 @media (max-width: 450px) {
   footer {
     margin-top: 550px;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
